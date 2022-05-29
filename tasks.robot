@@ -86,9 +86,8 @@ Fill the form
 Embed the robot screenshot to the receipt PDF file
     [Arguments]  ${screenshot}  ${pdf}
     
-    ${finalPdf}=  Create List  ${pdf}
-    ...     ${screenshot}
-
+    ${finalPdf}=  Create List  ${screenshot}
+    
     Add Files To Pdf  ${finalPdf}  ${pdf}  True
     
 Create a ZIP file of the receipts
